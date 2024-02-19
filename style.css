@@ -1,40 +1,41 @@
 body {
-    background-color: #FFE7C1;
-    text-align: center;
+    background-color: #FFE7C1; /* додамо фон до нашого сайту (уся палітра кольорів з веб-ресурсу ColorHunt) */
 }
 
 .timer-container {
-    background-color: #E9A8F2;
-    opacity: 0.8;
-    color: #000;
-    font-weight: 600;
+    background-color: #E9A8F2; /* додаємо фоновий колір до блоку з текстом */
+    opacity: 0.8; /* налаштовуємо прозорість */
+    color: #000; /* вказуємо колір тексту */
+    font-weight: 600; /* жирність тексту */
 
 
-    border-radius: 30px;
-    position: absolute;
+    border-radius: 30px; /* налаштовуємо заокруглення блоку */
+    box-shadow: 20px 15px 30px rgba(128, 128, 128, 0.6);
+
+    position: absolute; 
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%) /* всі стрічки вище допомагають центрувати блок по вертикалі та горизонталі */
 }
 
 .timer-window {
-    padding: 5px 15px 20px 15px;
-    display: flex;
+    padding: 5px 15px 20px 15px; /* налаштування виступів */
+    display: flex; /* дозволяємо елементам блоку знаходитися на одному рівні */ 
 
-    font-size: 18px;
+    font-size: 18px; /* встановлюємо розмір шрифту */
 }
 
 .text {
-    text-align: center;
-    padding-top: 10px;
+    text-align: center; /* вирівнюємо верхню стрічку по центру блоку */ 
+    padding-top: 10px; /* відступ зверху */ 
     font-family: "Pacifico", cursive;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 30px; /* вище налаштовуємо шрифт */
 }
 
 .timer-unit {
-    padding: 0px 20px 0 5px;
+    padding: 0px 20px 0 5px; /* відступи для тексту від чисел */
 }
 
 @media (max-width: 600px) {
